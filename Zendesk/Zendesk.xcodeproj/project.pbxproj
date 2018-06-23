@@ -14,6 +14,16 @@
 		2B6B9D6220DA80080099A915 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B6B9D6020DA80080099A915 /* LaunchScreen.storyboard */; };
 		2B6B9D6D20DA80090099A915 /* ZendeskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9D6C20DA80090099A915 /* ZendeskTests.swift */; };
 		2B6B9D7820DA80090099A915 /* ZendeskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9D7720DA80090099A915 /* ZendeskUITests.swift */; };
+		2B6B9D8F20DA852D0099A915 /* TicketListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9D8E20DA852D0099A915 /* TicketListTableViewController.swift */; };
+		2B6B9D9120DA89C00099A915 /* TicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9D9020DA89C00099A915 /* TicketTableViewCell.swift */; };
+		2B6B9D9420DA951E0099A915 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9D9320DA951E0099A915 /* Identifiable.swift */; };
+		2B6B9D9620DABC920099A915 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9D9520DABC920099A915 /* TableView.swift */; };
+		2B6B9D9C20DAC1FF0099A915 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9D9B20DAC1FF0099A915 /* Colors.swift */; };
+		2B6B9D9E20DACDE80099A915 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9D9D20DACDE80099A915 /* View.swift */; };
+		2B6B9DA020DBC5CF0099A915 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9D9F20DBC5CF0099A915 /* StatusView.swift */; };
+		2B6B9DA320DBC6FB0099A915 /* TicketStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9DA220DBC6FB0099A915 /* TicketStatus.swift */; };
+		2B6B9DA520DBD3450099A915 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9DA420DBD3450099A915 /* Localizable.swift */; };
+		2B6B9DA820DBE96F0099A915 /* LocalizableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9DA720DBE96F0099A915 /* LocalizableStrings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +57,16 @@
 		2B6B9D7320DA80090099A915 /* ZendeskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZendeskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B6B9D7720DA80090099A915 /* ZendeskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZendeskUITests.swift; sourceTree = "<group>"; };
 		2B6B9D7920DA80090099A915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B6B9D8E20DA852D0099A915 /* TicketListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketListTableViewController.swift; sourceTree = "<group>"; };
+		2B6B9D9020DA89C00099A915 /* TicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketTableViewCell.swift; sourceTree = "<group>"; };
+		2B6B9D9320DA951E0099A915 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
+		2B6B9D9520DABC920099A915 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		2B6B9D9B20DAC1FF0099A915 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		2B6B9D9D20DACDE80099A915 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		2B6B9D9F20DBC5CF0099A915 /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
+		2B6B9DA220DBC6FB0099A915 /* TicketStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketStatus.swift; sourceTree = "<group>"; };
+		2B6B9DA420DBD3450099A915 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		2B6B9DA720DBE96F0099A915 /* LocalizableStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableStrings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +144,8 @@
 		2B6B9D8520DA800E0099A915 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				2B6B9D9220DA8FDC0099A915 /* Commons */,
+				2B6B9D8920DA84D40099A915 /* Modules */,
 				2B6B9D5720DA80070099A915 /* AppDelegate.swift */,
 				2B6B9D5920DA80070099A915 /* ViewController.swift */,
 			);
@@ -147,6 +169,70 @@
 				2B6B9D6020DA80080099A915 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		2B6B9D8920DA84D40099A915 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				2B6B9D8A20DA84DC0099A915 /* TicketList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		2B6B9D8A20DA84DC0099A915 /* TicketList */ = {
+			isa = PBXGroup;
+			children = (
+				2B6B9DA120DBC6540099A915 /* Entities */,
+				2B6B9D8B20DA84ED0099A915 /* View */,
+			);
+			path = TicketList;
+			sourceTree = "<group>";
+		};
+		2B6B9D8B20DA84ED0099A915 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B6B9D8E20DA852D0099A915 /* TicketListTableViewController.swift */,
+				2B6B9D9020DA89C00099A915 /* TicketTableViewCell.swift */,
+				2B6B9D9F20DBC5CF0099A915 /* StatusView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B6B9D9220DA8FDC0099A915 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				2B6B9DA620DBE94D0099A915 /* Infra */,
+				2B6B9D9720DABE670099A915 /* Extensions and Protocols */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		2B6B9D9720DABE670099A915 /* Extensions and Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2B6B9D9320DA951E0099A915 /* Identifiable.swift */,
+				2B6B9D9520DABC920099A915 /* TableView.swift */,
+				2B6B9D9B20DAC1FF0099A915 /* Colors.swift */,
+				2B6B9D9D20DACDE80099A915 /* View.swift */,
+				2B6B9DA420DBD3450099A915 /* Localizable.swift */,
+			);
+			path = "Extensions and Protocols";
+			sourceTree = "<group>";
+		};
+		2B6B9DA120DBC6540099A915 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				2B6B9DA220DBC6FB0099A915 /* TicketStatus.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		2B6B9DA620DBE94D0099A915 /* Infra */ = {
+			isa = PBXGroup;
+			children = (
+				2B6B9DA720DBE96F0099A915 /* LocalizableStrings.swift */,
+			);
+			path = Infra;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,8 +366,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B6B9DA520DBD3450099A915 /* Localizable.swift in Sources */,
+				2B6B9D9E20DACDE80099A915 /* View.swift in Sources */,
+				2B6B9DA320DBC6FB0099A915 /* TicketStatus.swift in Sources */,
 				2B6B9D5A20DA80070099A915 /* ViewController.swift in Sources */,
+				2B6B9DA020DBC5CF0099A915 /* StatusView.swift in Sources */,
+				2B6B9D9C20DAC1FF0099A915 /* Colors.swift in Sources */,
+				2B6B9D9620DABC920099A915 /* TableView.swift in Sources */,
+				2B6B9DA820DBE96F0099A915 /* LocalizableStrings.swift in Sources */,
+				2B6B9D8F20DA852D0099A915 /* TicketListTableViewController.swift in Sources */,
 				2B6B9D5820DA80070099A915 /* AppDelegate.swift in Sources */,
+				2B6B9D9420DA951E0099A915 /* Identifiable.swift in Sources */,
+				2B6B9D9120DA89C00099A915 /* TicketTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,12 +552,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZKQM2ZUTF7;
-				INFOPLIST_FILE = Zendesk/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Zendesk/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nucci.enterprise.Zendesk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nucci.Zendesk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -474,12 +570,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZKQM2ZUTF7;
-				INFOPLIST_FILE = Zendesk/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Zendesk/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nucci.enterprise.Zendesk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nucci.Zendesk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2B6B9D5820DA80070099A915 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9D5720DA80070099A915 /* AppDelegate.swift */; };
-		2B6B9D5A20DA80070099A915 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9D5920DA80070099A915 /* ViewController.swift */; };
 		2B6B9D5D20DA80070099A915 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B6B9D5B20DA80070099A915 /* Main.storyboard */; };
 		2B6B9D5F20DA80080099A915 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B6B9D5E20DA80080099A915 /* Assets.xcassets */; };
 		2B6B9D6220DA80080099A915 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B6B9D6020DA80080099A915 /* LaunchScreen.storyboard */; };
@@ -24,6 +23,13 @@
 		2B6B9DA320DBC6FB0099A915 /* TicketStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9DA220DBC6FB0099A915 /* TicketStatus.swift */; };
 		2B6B9DA520DBD3450099A915 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9DA420DBD3450099A915 /* Localizable.swift */; };
 		2B6B9DA820DBE96F0099A915 /* LocalizableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9DA720DBE96F0099A915 /* LocalizableStrings.swift */; };
+		2B6B9DB220DEB1280099A915 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9DB120DEB1280099A915 /* Ticket.swift */; };
+		2B6B9DB720DEB89E0099A915 /* TicketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9DB620DEB89E0099A915 /* TicketService.swift */; };
+		2B6B9DBA20DEB9440099A915 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B6B9DB920DEB9440099A915 /* Alamofire.framework */; };
+		2B6B9DBC20DEC2810099A915 /* TicketListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9DBB20DEC2810099A915 /* TicketListViewModel.swift */; };
+		2B6B9DBF20DFCDBE0099A915 /* TicketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9DBE20DFCDBE0099A915 /* TicketViewModel.swift */; };
+		2B6B9DC120DFCFF70099A915 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9DC020DFCFF70099A915 /* Bindable.swift */; };
+		2B6B9DC320DFDBC70099A915 /* TicketsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9DC220DFDBC70099A915 /* TicketsResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +52,6 @@
 /* Begin PBXFileReference section */
 		2B6B9D5420DA80070099A915 /* Zendesk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zendesk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B6B9D5720DA80070099A915 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2B6B9D5920DA80070099A915 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2B6B9D5C20DA80070099A915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B6B9D5E20DA80080099A915 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B6B9D6120DA80080099A915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,6 +72,13 @@
 		2B6B9DA220DBC6FB0099A915 /* TicketStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketStatus.swift; sourceTree = "<group>"; };
 		2B6B9DA420DBD3450099A915 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		2B6B9DA720DBE96F0099A915 /* LocalizableStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableStrings.swift; sourceTree = "<group>"; };
+		2B6B9DB120DEB1280099A915 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		2B6B9DB620DEB89E0099A915 /* TicketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketService.swift; sourceTree = "<group>"; };
+		2B6B9DB920DEB9440099A915 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		2B6B9DBB20DEC2810099A915 /* TicketListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketListViewModel.swift; sourceTree = "<group>"; };
+		2B6B9DBE20DFCDBE0099A915 /* TicketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewModel.swift; sourceTree = "<group>"; };
+		2B6B9DC020DFCFF70099A915 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		2B6B9DC220DFDBC70099A915 /* TicketsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B6B9DBA20DEB9440099A915 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +114,7 @@
 				2B6B9D6B20DA80090099A915 /* ZendeskTests */,
 				2B6B9D7620DA80090099A915 /* ZendeskUITests */,
 				2B6B9D5520DA80070099A915 /* Products */,
+				2B6B9DB820DEB9440099A915 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,10 +158,11 @@
 		2B6B9D8520DA800E0099A915 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				2B6B9D9220DA8FDC0099A915 /* Commons */,
-				2B6B9D8920DA84D40099A915 /* Modules */,
 				2B6B9D5720DA80070099A915 /* AppDelegate.swift */,
-				2B6B9D5920DA80070099A915 /* ViewController.swift */,
+				2B6B9DB320DEB7B60099A915 /* Model */,
+				2B6B9D8920DA84D40099A915 /* Modules */,
+				2B6B9DB420DEB7FF0099A915 /* Service */,
+				2B6B9D9220DA8FDC0099A915 /* Commons */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -182,20 +197,11 @@
 		2B6B9D8A20DA84DC0099A915 /* TicketList */ = {
 			isa = PBXGroup;
 			children = (
-				2B6B9DA120DBC6540099A915 /* Entities */,
-				2B6B9D8B20DA84ED0099A915 /* View */,
+				2B6B9DBD20DFCDA70099A915 /* Cell */,
+				2B6B9DBB20DEC2810099A915 /* TicketListViewModel.swift */,
+				2B6B9D8E20DA852D0099A915 /* TicketListTableViewController.swift */,
 			);
 			path = TicketList;
-			sourceTree = "<group>";
-		};
-		2B6B9D8B20DA84ED0099A915 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				2B6B9D8E20DA852D0099A915 /* TicketListTableViewController.swift */,
-				2B6B9D9020DA89C00099A915 /* TicketTableViewCell.swift */,
-				2B6B9D9F20DBC5CF0099A915 /* StatusView.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		2B6B9D9220DA8FDC0099A915 /* Commons */ = {
@@ -219,20 +225,49 @@
 			path = "Extensions and Protocols";
 			sourceTree = "<group>";
 		};
-		2B6B9DA120DBC6540099A915 /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				2B6B9DA220DBC6FB0099A915 /* TicketStatus.swift */,
-			);
-			path = Entities;
-			sourceTree = "<group>";
-		};
 		2B6B9DA620DBE94D0099A915 /* Infra */ = {
 			isa = PBXGroup;
 			children = (
 				2B6B9DA720DBE96F0099A915 /* LocalizableStrings.swift */,
+				2B6B9DC020DFCFF70099A915 /* Bindable.swift */,
 			);
 			path = Infra;
+			sourceTree = "<group>";
+		};
+		2B6B9DB320DEB7B60099A915 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2B6B9DA220DBC6FB0099A915 /* TicketStatus.swift */,
+				2B6B9DB120DEB1280099A915 /* Ticket.swift */,
+				2B6B9DC220DFDBC70099A915 /* TicketsResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2B6B9DB420DEB7FF0099A915 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2B6B9DB620DEB89E0099A915 /* TicketService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2B6B9DB820DEB9440099A915 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B6B9DB920DEB9440099A915 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B6B9DBD20DFCDA70099A915 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2B6B9D9F20DBC5CF0099A915 /* StatusView.swift */,
+				2B6B9DBE20DFCDBE0099A915 /* TicketViewModel.swift */,
+				2B6B9D9020DA89C00099A915 /* TicketTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,12 +422,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B6B9DA520DBD3450099A915 /* Localizable.swift in Sources */,
+				2B6B9DBF20DFCDBE0099A915 /* TicketViewModel.swift in Sources */,
+				2B6B9DB720DEB89E0099A915 /* TicketService.swift in Sources */,
 				2B6B9D9E20DACDE80099A915 /* View.swift in Sources */,
+				2B6B9DC320DFDBC70099A915 /* TicketsResponse.swift in Sources */,
 				2B6B9DA320DBC6FB0099A915 /* TicketStatus.swift in Sources */,
-				2B6B9D5A20DA80070099A915 /* ViewController.swift in Sources */,
 				2B6B9DA020DBC5CF0099A915 /* StatusView.swift in Sources */,
 				2B6B9D9C20DAC1FF0099A915 /* Colors.swift in Sources */,
+				2B6B9DBC20DEC2810099A915 /* TicketListViewModel.swift in Sources */,
+				2B6B9DB220DEB1280099A915 /* Ticket.swift in Sources */,
 				2B6B9D9620DABC920099A915 /* TableView.swift in Sources */,
+				2B6B9DC120DFCFF70099A915 /* Bindable.swift in Sources */,
 				2B6B9DA820DBE96F0099A915 /* LocalizableStrings.swift in Sources */,
 				2B6B9D8F20DA852D0099A915 /* TicketListTableViewController.swift in Sources */,
 				2B6B9D5820DA80070099A915 /* AppDelegate.swift in Sources */,
@@ -572,6 +612,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZKQM2ZUTF7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Zendesk/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -590,6 +634,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZKQM2ZUTF7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Zendesk/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

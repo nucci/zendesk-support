@@ -26,7 +26,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="92.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BXh-gn-fvh">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BXh-gn-fvh" customClass="StatusView" customModule="Zendesk" customModuleProvider="target">
                                             <rect key="frame" x="20" y="10" width="40" height="13"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAb-NM-YoD">
@@ -52,6 +52,9 @@
                                                     <real key="value" value="0.0"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outlet property="statusLabel" destination="hAb-NM-YoD" id="cy7-2r-qaD"/>
+                                            </connections>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subject" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AL-Vy-IBz">
                                             <rect key="frame" x="20" y="33" width="57" height="20"/>
@@ -87,6 +90,12 @@
                                         <constraint firstItem="BXh-gn-fvh" firstAttribute="leading" secondItem="t9V-Ta-tS5" secondAttribute="leading" constant="20" id="yv7-c5-7GM"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="mLu-a9-Ybf" id="XQl-4m-apm"/>
+                                    <outlet property="identifierLabel" destination="FXt-zf-r7j" id="biN-Yf-mKz"/>
+                                    <outlet property="statusView" destination="BXh-gn-fvh" id="czJ-p4-be2"/>
+                                    <outlet property="subjectLabel" destination="3AL-Vy-IBz" id="ryt-L7-D74"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

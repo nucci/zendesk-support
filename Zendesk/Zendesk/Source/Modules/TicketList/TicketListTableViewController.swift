@@ -10,12 +10,25 @@ import UIKit
 
 class TicketListTableViewController: UITableViewController {
 
+    lazy var viewModel: TicketListViewModel = TicketListViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        initView()
+        initViewModel()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    private func initView() {
+        
+    }
+    
+    private func initViewModel() {
+        
     }
 }
 
@@ -33,6 +46,9 @@ extension TicketListTableViewController {
     override func tableView(_ tableView: UITableView,
                             cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: TicketTableViewCell = tableView.dequeueReusableCell(for: indexPath)
+        
+        let ticketViewModel = viewModel[indexPath.row]
+        cell.setup(ticketViewModel)
         
         return cell
     }

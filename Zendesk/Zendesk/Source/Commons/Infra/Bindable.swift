@@ -2,7 +2,7 @@
 //  Bindable.swift
 //  Zendesk
 //
-//  Created by Gian Nucci on 24/06/18.
+//  Created by Anonymous User on 24/06/18.
 //  Copyright © 2018 Nucci. All rights reserved.
 //
 
@@ -10,16 +10,26 @@ import Foundation
 
 class Bindable<T> {
     
-    var bind :(T) -> () = { _ in }
+    private var closure: (T) -> Void = { _ in }
     
-    var value :T? {
+    /// value property
+    var value: T {
         didSet {
-            bind(value!)
+            closure(value)
         }
     }
     
-    init(_ v :T) {
-        value = v
+    /// Init with generic type
+    ///
+    /// - Parameter v: Custom generic type value
+    init(_ value: T) {
+        self.value = value
     }
     
+    /// Binding closure
+    ///
+    /// - Parameter closure: this closure will be called when value property changes
+    func bind(_ closure: @escaping (T) -> Void) {
+        self.closure = closure
+    }
 }

@@ -2,7 +2,7 @@
 //  LocalizableStrings.swift
 //  Zendesk
 //
-//  Created by Gian Nucci on 21/06/18.
+//  Created by Anonymous User on 21/06/18.
 //  Copyright © 2018 Nucci. All rights reserved.
 //
 
@@ -14,6 +14,10 @@ enum LocalizableStrings: String {
     case statusNew
     case statusOpen
     case statusPending
+    
+    // Ticket List
+    case ticketListTitle
+    case defaultErrorMessage
     
     /// This method localizes the raw value of the object
     ///

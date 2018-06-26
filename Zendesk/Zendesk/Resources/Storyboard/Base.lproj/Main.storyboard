@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Zendesk Tickets-->
         <scene sceneID="lct-zT-qn5">
             <objects>
                 <tableViewController id="Rte-TG-2f0" customClass="TicketListTableViewController" customModule="Zendesk" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,6 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="31j-uh-h5a">
+                            <rect key="frame" x="0.0" y="121" width="375" height="5"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TicketTableViewCell" rowHeight="93" id="nHT-Ok-kVU" customClass="TicketTableViewCell" customModule="Zendesk" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="93"/>
@@ -36,7 +41,6 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" name="status-open"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="13" id="QdN-Md-QYS"/>
                                                 <constraint firstItem="hAb-NM-YoD" firstAttribute="leading" secondItem="BXh-gn-fvh" secondAttribute="leading" constant="5" id="RJj-9I-b38"/>
@@ -56,8 +60,8 @@
                                                 <outlet property="statusLabel" destination="hAb-NM-YoD" id="cy7-2r-qaD"/>
                                             </connections>
                                         </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subject" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AL-Vy-IBz">
-                                            <rect key="frame" x="20" y="33" width="57" height="20"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subject" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AL-Vy-IBz">
+                                            <rect key="frame" x="20" y="33" width="57" height="19.5"/>
                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                             <color key="textColor" name="text-primary"/>
                                             <nil key="highlightedColor"/>
@@ -68,8 +72,8 @@
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLu-a9-Ybf">
-                                            <rect key="frame" x="20" y="63" width="63.5" height="19.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLu-a9-Ybf">
+                                            <rect key="frame" x="20" y="62.5" width="63.5" height="20"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" name="text-secondary"/>
                                             <nil key="highlightedColor"/>
@@ -90,6 +94,7 @@
                                         <constraint firstItem="BXh-gn-fvh" firstAttribute="leading" secondItem="t9V-Ta-tS5" secondAttribute="leading" constant="20" id="yv7-c5-7GM"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <connections>
                                     <outlet property="descriptionLabel" destination="mLu-a9-Ybf" id="XQl-4m-apm"/>
                                     <outlet property="identifierLabel" destination="FXt-zf-r7j" id="biN-Yf-mKz"/>
@@ -103,7 +108,13 @@
                             <outlet property="delegate" destination="Rte-TG-2f0" id="syB-bS-1LY"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="UCd-JO-jUz"/>
+                    <navigationItem key="navigationItem" title="Zendesk Tickets" id="UCd-JO-jUz">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="C4R-zR-HFM">
+                            <connections>
+                                <action selector="refresh:" destination="Rte-TG-2f0" id="HPO-MC-Dlw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ss8-gC-Wbi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -127,9 +138,6 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="status-open">
-            <color red="1" green="0.59607843137254901" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="text-primary">
             <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

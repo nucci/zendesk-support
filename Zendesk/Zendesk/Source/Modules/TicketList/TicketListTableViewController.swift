@@ -2,7 +2,7 @@
 //  TicketListTableViewController.swift
 //  Zendesk
 //
-//  Created by Gian Nucci on 20/06/18.
+//  Created by Anonymous User on 20/06/18.
 //  Copyright © 2018 Nucci. All rights reserved.
 //
 
@@ -10,28 +10,57 @@ import UIKit
 
 class TicketListTableViewController: UITableViewController {
 
-    lazy var viewModel: TicketListViewModel = TicketListViewModel()
+    // MARK: Properties
+    private lazy var viewModel: TicketListViewModel = TicketListViewModel()
+    private var activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
     
+    // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
         initView()
         initViewModel()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
     
+    // MARK: Private initializers
     private func initView() {
+        activityIndicator.center = view.center
+        activityIndicator.hidesWhenStopped = true
+        view.addSubview(activityIndicator)
+        view.bringSubview(toFront: activityIndicator)
+    }
+
+    private func initViewModel() {
+        viewModel.tickets.bind { [weak self] (_) in
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
+        }
         
+        viewModel.isLoading.bind { [weak self] (isLoading) in
+            if isLoading {
+                self?.activityIndicator.startAnimating()
+            } else {
+                self?.activityIndicator.stopAnimating()
+            }
+        }
+        
+        viewModel.errorMessage.bind { [weak self] (errorMessage) in
+            let alert = UIAlertController(title: "=(", message: errorMessage, preferredStyle: .alert)
+            alert.addAction( UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+            self?.present(alert, animated: true, completion: nil)
+        }
+        
+        viewModel.fetchTickets()
     }
     
-    private func initViewModel() {
-        
+    // MARK: Actions
+    @IBAction func refresh(_ sender: Any) {
+        viewModel.fetchTickets()
     }
 }
 
+// MARK: TableView Datasource and Delegate
 extension TicketListTableViewController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -40,7 +69,7 @@ extension TicketListTableViewController {
     
     override func tableView(_ tableView: UITableView,
                             numberOfRowsInSection section: Int) -> Int {
-        return 15
+        return viewModel.numberOfCells
     }
     
     override func tableView(_ tableView: UITableView,
@@ -53,48 +82,3 @@ extension TicketListTableViewController {
         return cell
     }
 }
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */

@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B14589420E141BB0080A501 /* ticket-new.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B14589320E141BB0080A501 /* ticket-new.json */; };
+		2B14589620E142E60080A501 /* ticket-open.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B14589520E142E60080A501 /* ticket-open.json */; };
+		2B14589920E143230080A501 /* ticket-pending.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B14589720E142F50080A501 /* ticket-pending.json */; };
+		2B14589B20E15DC70080A501 /* TicketListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B14589A20E15DC70080A501 /* TicketListViewModelTests.swift */; };
+		2B14589D20E1664F0080A501 /* tickets_200.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B14589C20E1664F0080A501 /* tickets_200.json */; };
 		2B6B9D5820DA80070099A915 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9D5720DA80070099A915 /* AppDelegate.swift */; };
 		2B6B9D5D20DA80070099A915 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B6B9D5B20DA80070099A915 /* Main.storyboard */; };
 		2B6B9D5F20DA80080099A915 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B6B9D5E20DA80080099A915 /* Assets.xcassets */; };
 		2B6B9D6220DA80080099A915 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B6B9D6020DA80080099A915 /* LaunchScreen.storyboard */; };
-		2B6B9D6D20DA80090099A915 /* ZendeskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9D6C20DA80090099A915 /* ZendeskTests.swift */; };
-		2B6B9D7820DA80090099A915 /* ZendeskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9D7720DA80090099A915 /* ZendeskUITests.swift */; };
 		2B6B9D8F20DA852D0099A915 /* TicketListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9D8E20DA852D0099A915 /* TicketListTableViewController.swift */; };
 		2B6B9D9120DA89C00099A915 /* TicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9D9020DA89C00099A915 /* TicketTableViewCell.swift */; };
 		2B6B9D9420DA951E0099A915 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9D9320DA951E0099A915 /* Identifiable.swift */; };
@@ -30,6 +33,14 @@
 		2B6B9DBF20DFCDBE0099A915 /* TicketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9DBE20DFCDBE0099A915 /* TicketViewModel.swift */; };
 		2B6B9DC120DFCFF70099A915 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9DC020DFCFF70099A915 /* Bindable.swift */; };
 		2B6B9DC320DFDBC70099A915 /* TicketsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9DC220DFDBC70099A915 /* TicketsResponse.swift */; };
+		2B6B9DC720E020020099A915 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2B6B9DC620E020020099A915 /* Localizable.strings */; };
+		2B6B9DCB20E111990099A915 /* ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9DCA20E111990099A915 /* ServiceTests.swift */; };
+		2B6B9DCF20E1149B0099A915 /* TicketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9DCE20E1149B0099A915 /* TicketTests.swift */; };
+		2B6B9DD220E115D20099A915 /* TicketsMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9DD120E115D20099A915 /* TicketsMockService.swift */; };
+		2B6B9DD420E12E950099A915 /* BaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9DD320E12E950099A915 /* BaseMock.swift */; };
+		2B6B9DD620E131310099A915 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B9DD520E131310099A915 /* Errors.swift */; };
+		692184E56D1202D220454AAF /* Pods_Zendesk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF8995FAE3B4075522B8A32 /* Pods_Zendesk.framework */; };
+		E34A58C3C33541EEB711C27B /* Pods_ZendeskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298B9F1A43AA14D18C7134EA /* Pods_ZendeskTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,16 +51,16 @@
 			remoteGlobalIDString = 2B6B9D5320DA80070099A915;
 			remoteInfo = Zendesk;
 		};
-		2B6B9D7420DA80090099A915 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2B6B9D4C20DA80070099A915 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2B6B9D5320DA80070099A915;
-			remoteInfo = Zendesk;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DF8995FAE3B4075522B8A32 /* Pods_Zendesk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zendesk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		298B9F1A43AA14D18C7134EA /* Pods_ZendeskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZendeskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B14589320E141BB0080A501 /* ticket-new.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "ticket-new.json"; sourceTree = "<group>"; };
+		2B14589520E142E60080A501 /* ticket-open.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "ticket-open.json"; sourceTree = "<group>"; };
+		2B14589720E142F50080A501 /* ticket-pending.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "ticket-pending.json"; sourceTree = "<group>"; };
+		2B14589A20E15DC70080A501 /* TicketListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketListViewModelTests.swift; sourceTree = "<group>"; };
+		2B14589C20E1664F0080A501 /* tickets_200.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tickets_200.json; sourceTree = "<group>"; };
 		2B6B9D5420DA80070099A915 /* Zendesk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zendesk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B6B9D5720DA80070099A915 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B6B9D5C20DA80070099A915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,11 +68,7 @@
 		2B6B9D6120DA80080099A915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B6B9D6320DA80080099A915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B6B9D6820DA80080099A915 /* ZendeskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZendeskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B6B9D6C20DA80090099A915 /* ZendeskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZendeskTests.swift; sourceTree = "<group>"; };
 		2B6B9D6E20DA80090099A915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2B6B9D7320DA80090099A915 /* ZendeskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZendeskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B6B9D7720DA80090099A915 /* ZendeskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZendeskUITests.swift; sourceTree = "<group>"; };
-		2B6B9D7920DA80090099A915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B6B9D8E20DA852D0099A915 /* TicketListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketListTableViewController.swift; sourceTree = "<group>"; };
 		2B6B9D9020DA89C00099A915 /* TicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketTableViewCell.swift; sourceTree = "<group>"; };
 		2B6B9D9320DA951E0099A915 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
@@ -79,6 +86,16 @@
 		2B6B9DBE20DFCDBE0099A915 /* TicketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewModel.swift; sourceTree = "<group>"; };
 		2B6B9DC020DFCFF70099A915 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		2B6B9DC220DFDBC70099A915 /* TicketsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsResponse.swift; sourceTree = "<group>"; };
+		2B6B9DC620E020020099A915 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		2B6B9DCA20E111990099A915 /* ServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTests.swift; sourceTree = "<group>"; };
+		2B6B9DCE20E1149B0099A915 /* TicketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketTests.swift; sourceTree = "<group>"; };
+		2B6B9DD120E115D20099A915 /* TicketsMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsMockService.swift; sourceTree = "<group>"; };
+		2B6B9DD320E12E950099A915 /* BaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMock.swift; sourceTree = "<group>"; };
+		2B6B9DD520E131310099A915 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		35EF7CC94A219C36738E7E61 /* Pods-Zendesk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zendesk.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zendesk/Pods-Zendesk.release.xcconfig"; sourceTree = "<group>"; };
+		8410E143D3D63D9CAFA9E97F /* Pods-ZendeskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZendeskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZendeskTests/Pods-ZendeskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		982CB884769BD0EA48081948 /* Pods-ZendeskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZendeskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZendeskTests/Pods-ZendeskTests.release.xcconfig"; sourceTree = "<group>"; };
+		BE9BF308D1EF14777DCC45E6 /* Pods-Zendesk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zendesk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zendesk/Pods-Zendesk.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +104,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B6B9DBA20DEB9440099A915 /* Alamofire.framework in Frameworks */,
+				692184E56D1202D220454AAF /* Pods_Zendesk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,13 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2B6B9D7020DA80090099A915 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				E34A58C3C33541EEB711C27B /* Pods_ZendeskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,9 +124,9 @@
 			children = (
 				2B6B9D5620DA80070099A915 /* Zendesk */,
 				2B6B9D6B20DA80090099A915 /* ZendeskTests */,
-				2B6B9D7620DA80090099A915 /* ZendeskUITests */,
 				2B6B9D5520DA80070099A915 /* Products */,
 				2B6B9DB820DEB9440099A915 /* Frameworks */,
+				31B77250FF7925A125E308B3 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,7 +135,6 @@
 			children = (
 				2B6B9D5420DA80070099A915 /* Zendesk.app */,
 				2B6B9D6820DA80080099A915 /* ZendeskTests.xctest */,
-				2B6B9D7320DA80090099A915 /* ZendeskUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,19 +151,11 @@
 		2B6B9D6B20DA80090099A915 /* ZendeskTests */ = {
 			isa = PBXGroup;
 			children = (
-				2B6B9D6C20DA80090099A915 /* ZendeskTests.swift */,
+				2B6B9DC820E111560099A915 /* Source */,
+				2B6B9DC920E1115D0099A915 /* Resources */,
 				2B6B9D6E20DA80090099A915 /* Info.plist */,
 			);
 			path = ZendeskTests;
-			sourceTree = "<group>";
-		};
-		2B6B9D7620DA80090099A915 /* ZendeskUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2B6B9D7720DA80090099A915 /* ZendeskUITests.swift */,
-				2B6B9D7920DA80090099A915 /* Info.plist */,
-			);
-			path = ZendeskUITests;
 			sourceTree = "<group>";
 		};
 		2B6B9D8520DA800E0099A915 /* Source */ = {
@@ -173,6 +176,7 @@
 				2B6B9D6320DA80080099A915 /* Info.plist */,
 				2B6B9D5E20DA80080099A915 /* Assets.xcassets */,
 				2B6B9D8820DA80F60099A915 /* Storyboard */,
+				2B6B9DC620E020020099A915 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -230,6 +234,7 @@
 			children = (
 				2B6B9DA720DBE96F0099A915 /* LocalizableStrings.swift */,
 				2B6B9DC020DFCFF70099A915 /* Bindable.swift */,
+				2B6B9DD520E131310099A915 /* Errors.swift */,
 			);
 			path = Infra;
 			sourceTree = "<group>";
@@ -256,6 +261,8 @@
 			isa = PBXGroup;
 			children = (
 				2B6B9DB920DEB9440099A915 /* Alamofire.framework */,
+				1DF8995FAE3B4075522B8A32 /* Pods_Zendesk.framework */,
+				298B9F1A43AA14D18C7134EA /* Pods_ZendeskTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -270,6 +277,48 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		2B6B9DC820E111560099A915 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2B6B9DCA20E111990099A915 /* ServiceTests.swift */,
+				2B6B9DCE20E1149B0099A915 /* TicketTests.swift */,
+				2B14589A20E15DC70080A501 /* TicketListViewModelTests.swift */,
+				2B6B9DD020E115BA0099A915 /* Mocks */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		2B6B9DC920E1115D0099A915 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2B14589C20E1664F0080A501 /* tickets_200.json */,
+				2B14589320E141BB0080A501 /* ticket-new.json */,
+				2B14589520E142E60080A501 /* ticket-open.json */,
+				2B14589720E142F50080A501 /* ticket-pending.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2B6B9DD020E115BA0099A915 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				2B6B9DD120E115D20099A915 /* TicketsMockService.swift */,
+				2B6B9DD320E12E950099A915 /* BaseMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		31B77250FF7925A125E308B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE9BF308D1EF14777DCC45E6 /* Pods-Zendesk.debug.xcconfig */,
+				35EF7CC94A219C36738E7E61 /* Pods-Zendesk.release.xcconfig */,
+				8410E143D3D63D9CAFA9E97F /* Pods-ZendeskTests.debug.xcconfig */,
+				982CB884769BD0EA48081948 /* Pods-ZendeskTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -277,10 +326,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B6B9D7C20DA80090099A915 /* Build configuration list for PBXNativeTarget "Zendesk" */;
 			buildPhases = (
+				026E7253351C116C790D2CEA /* [CP] Check Pods Manifest.lock */,
 				2B6B9D5020DA80070099A915 /* Sources */,
 				2B6B9D5120DA80070099A915 /* Frameworks */,
 				2B6B9D5220DA80070099A915 /* Resources */,
 				2B6B9DB020DEAC080099A915 /* Carthage */,
+				2BB6FCCA20E2FD300020AA14 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -295,6 +346,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B6B9D7F20DA80090099A915 /* Build configuration list for PBXNativeTarget "ZendeskTests" */;
 			buildPhases = (
+				11BCC76504C4E2CB11014572 /* [CP] Check Pods Manifest.lock */,
 				2B6B9D6420DA80080099A915 /* Sources */,
 				2B6B9D6520DA80080099A915 /* Frameworks */,
 				2B6B9D6620DA80080099A915 /* Resources */,
@@ -308,24 +360,6 @@
 			productName = ZendeskTests;
 			productReference = 2B6B9D6820DA80080099A915 /* ZendeskTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		2B6B9D7220DA80090099A915 /* ZendeskUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2B6B9D8220DA80090099A915 /* Build configuration list for PBXNativeTarget "ZendeskUITests" */;
-			buildPhases = (
-				2B6B9D6F20DA80090099A915 /* Sources */,
-				2B6B9D7020DA80090099A915 /* Frameworks */,
-				2B6B9D7120DA80090099A915 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2B6B9D7520DA80090099A915 /* PBXTargetDependency */,
-			);
-			name = ZendeskUITests;
-			productName = ZendeskUITests;
-			productReference = 2B6B9D7320DA80090099A915 /* ZendeskUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -341,10 +375,6 @@
 						CreatedOnToolsVersion = 9.4.1;
 					};
 					2B6B9D6720DA80080099A915 = {
-						CreatedOnToolsVersion = 9.4.1;
-						TestTargetID = 2B6B9D5320DA80070099A915;
-					};
-					2B6B9D7220DA80090099A915 = {
 						CreatedOnToolsVersion = 9.4.1;
 						TestTargetID = 2B6B9D5320DA80070099A915;
 					};
@@ -365,7 +395,6 @@
 			targets = (
 				2B6B9D5320DA80070099A915 /* Zendesk */,
 				2B6B9D6720DA80080099A915 /* ZendeskTests */,
-				2B6B9D7220DA80090099A915 /* ZendeskUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -376,6 +405,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B6B9D6220DA80080099A915 /* LaunchScreen.storyboard in Resources */,
+				2B6B9DC720E020020099A915 /* Localizable.strings in Resources */,
 				2B6B9D5F20DA80080099A915 /* Assets.xcassets in Resources */,
 				2B6B9D5D20DA80070099A915 /* Main.storyboard in Resources */,
 			);
@@ -385,19 +415,52 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2B6B9D7120DA80090099A915 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				2B14589D20E1664F0080A501 /* tickets_200.json in Resources */,
+				2B14589620E142E60080A501 /* ticket-open.json in Resources */,
+				2B14589920E143230080A501 /* ticket-pending.json in Resources */,
+				2B14589420E141BB0080A501 /* ticket-new.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		026E7253351C116C790D2CEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Zendesk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		11BCC76504C4E2CB11014572 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZendeskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2B6B9DB020DEAC080099A915 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -413,6 +476,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		2BB6FCCA20E2FD300020AA14 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -437,6 +514,7 @@
 				2B6B9D8F20DA852D0099A915 /* TicketListTableViewController.swift in Sources */,
 				2B6B9D5820DA80070099A915 /* AppDelegate.swift in Sources */,
 				2B6B9D9420DA951E0099A915 /* Identifiable.swift in Sources */,
+				2B6B9DD620E131310099A915 /* Errors.swift in Sources */,
 				2B6B9D9120DA89C00099A915 /* TicketTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,15 +523,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B6B9D6D20DA80090099A915 /* ZendeskTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2B6B9D6F20DA80090099A915 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2B6B9D7820DA80090099A915 /* ZendeskUITests.swift in Sources */,
+				2B14589B20E15DC70080A501 /* TicketListViewModelTests.swift in Sources */,
+				2B6B9DD220E115D20099A915 /* TicketsMockService.swift in Sources */,
+				2B6B9DCB20E111990099A915 /* ServiceTests.swift in Sources */,
+				2B6B9DCF20E1149B0099A915 /* TicketTests.swift in Sources */,
+				2B6B9DD420E12E950099A915 /* BaseMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,11 +538,6 @@
 			isa = PBXTargetDependency;
 			target = 2B6B9D5320DA80070099A915 /* Zendesk */;
 			targetProxy = 2B6B9D6920DA80080099A915 /* PBXContainerItemProxy */;
-		};
-		2B6B9D7520DA80090099A915 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2B6B9D5320DA80070099A915 /* Zendesk */;
-			targetProxy = 2B6B9D7420DA80090099A915 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -608,6 +677,7 @@
 		};
 		2B6B9D7D20DA80090099A915 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE9BF308D1EF14777DCC45E6 /* Pods-Zendesk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -624,12 +694,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nucci.Zendesk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		2B6B9D7E20DA80090099A915 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35EF7CC94A219C36738E7E61 /* Pods-Zendesk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -646,12 +717,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nucci.Zendesk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		2B6B9D8020DA80090099A915 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8410E143D3D63D9CAFA9E97F /* Pods-ZendeskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -673,6 +745,7 @@
 		};
 		2B6B9D8120DA80090099A915 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 982CB884769BD0EA48081948 /* Pods-ZendeskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -689,46 +762,6 @@
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zendesk.app/Zendesk";
-			};
-			name = Release;
-		};
-		2B6B9D8320DA80090099A915 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZKQM2ZUTF7;
-				INFOPLIST_FILE = ZendeskUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nucci.enterprise.ZendeskUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Zendesk;
-			};
-			name = Debug;
-		};
-		2B6B9D8420DA80090099A915 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZKQM2ZUTF7;
-				INFOPLIST_FILE = ZendeskUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nucci.enterprise.ZendeskUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Zendesk;
 			};
 			name = Release;
 		};
@@ -758,15 +791,6 @@
 			buildConfigurations = (
 				2B6B9D8020DA80090099A915 /* Debug */,
 				2B6B9D8120DA80090099A915 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2B6B9D8220DA80090099A915 /* Build configuration list for PBXNativeTarget "ZendeskUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2B6B9D8320DA80090099A915 /* Debug */,
-				2B6B9D8420DA80090099A915 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

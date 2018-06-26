@@ -2,7 +2,7 @@
 //  View.swift
 //  Zendesk
 //
-//  Created by Gian Nucci on 20/06/18.
+//  Created by Anonymous User on 20/06/18.
 //  Copyright © 2018 Nucci. All rights reserved.
 //
 
@@ -21,9 +21,5 @@ public extension UIView {
         get { return layer.borderWidth }
         set { layer.borderWidth = newValue }
     }
-    
-    @IBInspectable public var borderColor: UIColor? {
-        get { return (layer.borderColor != nil) ? UIColor(cgColor: layer.borderColor!) : nil }
-        set { layer.borderColor = newValue?.cgColor }
-    }
+
 }

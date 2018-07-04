@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  Zendesk
+
+  Created by Anonymous User on 24/06/18.
+  Copyright © 2018 Nucci. All rights reserved.
+*/
+
+"statusOpen" = "open";
+"statusNew" = "new";
+"statusPending" = "pending";
+
+"ticketListTitle" = "Zendesk Tickets";
+"defaultErrorMessage" = "Something went wrong :( \n Please try again.";
